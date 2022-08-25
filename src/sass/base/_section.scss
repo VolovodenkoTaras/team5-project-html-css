@@ -1,0 +1,27 @@
+.section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+
+   &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: calc(33 / 28);
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:$tablet) {
+                font-size: 42px;
+                line-height: calc(49 / 42);
+            }
+    }
+
+}
