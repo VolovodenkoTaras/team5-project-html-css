@@ -1,1 +1,11 @@
 //Favorites styles
+.favorites {
+
+    &__text {
+        text-align: center;
+     }
+
+    &__list {
+        @extend %list;
+    }
+}
