@@ -1,9 +1,17 @@
-@import './common';
+@import './base/common';
 
-@import './header';
-@import './hero';
-@import './offerings';
-@import './favorites';
-@import './customers';
-@import './subscribe';
-@import './footer';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/basic';
+@import './base/placeholders';
+@import './base/container';
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/offerings';
+@import './layouts/favorites';
+@import './layouts/customers';
+@import './layouts/subscribe';
+@import './layouts/footer';
