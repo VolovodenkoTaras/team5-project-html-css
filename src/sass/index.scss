@@ -7,8 +7,11 @@
 @import './base/placeholders';
 @import './base/container';
 
+@import './components/buttons';
+
 
 @import './layouts/header';
+@import './layouts/mobile-menu';
 @import './layouts/hero';
 @import './layouts/offerings';
 @import './layouts/favorites';
