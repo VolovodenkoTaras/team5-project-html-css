@@ -1,3 +1,13 @@
+.offerings {
+    max-width: 1280px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .offerings__img {
     margin-bottom: 60px;
 }
@@ -10,14 +20,29 @@
     margin-bottom: 28px;
     text-align: left;
     max-width: 280px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 526px;
+        margin-bottom: 20px;
+    }
 }
 
 .offerings__desc {
     margin-bottom: 28px;
+
+    @media screen and (min-width: 768px){
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
 }
 
 .offerings__list {
     @extend %list;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 116px;
+    }
 }
 
 .offerings__item {
