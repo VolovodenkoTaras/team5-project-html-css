@@ -37,11 +37,21 @@
     }
 
 
-    &__wrapper {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 14px solid $color-yellow;
+    &__image {
+        border: 11px solid $color-yellow;
         border-radius: 50%;
+        padding: 18px 17px;
+        overflow: hidden;
+
+        @include media-query(tablet) {
+                border: 14px solid $color-yellow;
+                padding: 21px 20px;
+            }
+        
+            @include media-query(desktop) {
+                border: 16px solid $color-yellow;
+                padding: 25px 24px;
+            }
     }
+
 }
