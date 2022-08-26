@@ -1,17 +1,68 @@
 <section class="section offerings" id="offerings">
     <div class="container">
-        <img/>
+        <picture class="offerings__img">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/offerings/img@1x_lg-1-550.png 1x,
+                ./images/offerings/img@2x_lg-1-1100.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/offerings/img@1x_md-1-357.png 1x,
+                ./images/offerings/img@2x_md-1-714.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767.98px)"
+              srcset="
+                ./images/offerings/img@1x_sm-1-280.png 1x,
+                ./images/offerings/img@2x_sm-1-560.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./images/offerings/img@2x_sm-1-560.png" alt="apple"/>
+          </picture>
+        <ul class="offerings__img-list">
+            <li class="offerings__img-item">
+                <img
+                    srcset="./images/offerings/img@1x-2_md.png 1x , ./images/offerings/img@2x-2_md.png 2x"
+                    src="./images/offerings/img@1x-2_md.png"
+                    class="offerings__image"
+                    alt="apple"
+                    width="166"
+                    height="211"
+                />
+            </li>
+            <li class="offerings__img-item">
+                <img
+                    srcset="./images/offerings/img@1x-3_sm.png 1x , ./images/offerings/img@2x-3_sm.png 2x"
+                    src="./images/offerings/img@1x-3_sm.png"
+                    class="offerings__image"
+                    alt="small apple"
+                    width="108"
+                    height="136"
+                />
+            </li>
+        </ul>
+            
         <h2 class="section__title">What’s Special About Our Offerings</h2>
         <p class="offerings__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
         <ul class="offerings__list">
             <li class="offerings__item">
-                <h3 class="offerings__subtitle"></h3>
-                <p class="offerings__text"></p>
+                <h3 class="offerings__subtitle">Fasest Delivery</h3>
+                <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </li>
             <li class="offerings__item">
-                <h3 class="offerings__subtitle"></h3>
-                <p class="offerings__text"></p>
+                <h3 class="offerings__subtitle">Easy To Order</h3>
+                <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </li>
         </ul>
+
+        <button class="offerings__btn" type="button">Order Now</button>
     </div>
 </section>
