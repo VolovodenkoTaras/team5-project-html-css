@@ -1,9 +1,18 @@
 //Header styles
 .header {
+  background-color: $color-white-second;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   @extend %link;
+  padding: 10px 0;
 }
 .nav__item {
   @extend %list;
@@ -19,4 +28,10 @@
     line-height: inherit;
     color: inherit;
   }
+}
+.header__nav {
+  display: none;
+}
+.header__btn {
+  display: none;
 }
