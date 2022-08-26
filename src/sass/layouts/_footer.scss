@@ -1,5 +1,6 @@
 //Footer styles
 .footer {
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,23 +11,76 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/footer/footerBg-mob-640@2x.png);
   }
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/footer/footerBg-tabl-785@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/footerBg-tabl-1570@2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/footer/footerBg-desc-1211@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/footerBg-desc-2422@2x.png);
+    }
+  }
 }
 .footer_container {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    align-items: center;
+  }
 }
-
+.footer__nav {
+  @media screen and (min-width: $desktop) {
+    margin-right: 320px;
+  }
+}
+.footer__list {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+}
 .footer__logo {
   margin-right: 80px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 141px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 145px;
+  }
 }
 .footer__item {
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 40px;
   }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }
 .subscribe {
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .subscribe__text {
   font-weight: 500;
@@ -40,6 +94,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 13px;
+  }
 }
 .form__email {
   border: 0.854167px solid $color-yellow;
@@ -69,6 +128,9 @@
   &:focus {
     background-color: $color-yellow;
   }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
 }
 .privacy__link {
   color: $color-green-dark;
@@ -76,11 +138,28 @@
 .subscribe__privacy {
   font-size: 10px;
   line-height: 1.2;
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+.agreement {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 .agreement__link {
   font-size: 10px;
   line-height: 1.2;
   color: $color-green-dark;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 
 .agreement__list {
@@ -88,6 +167,10 @@
   gap: 32px;
 
   margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+    margin-bottom: 0px;
+  }
 }
 .agreement__item {
   @extend %list;
@@ -96,4 +179,8 @@
   font-size: 10px;
   line-height: 1.2;
   text-align: center;
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
