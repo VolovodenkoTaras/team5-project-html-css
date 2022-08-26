@@ -1,40 +1,39 @@
 <footer class="footer" id="footer">
-  <div class="container footer_conteiner">
+  <div class="container footer_container">
     <a class="logo" href="">
       <img class="logo-img" alt="logo FoodSta" width="72" height="52" />
     </a>
     <nav class="nav">
-      <ul class="nav_list">
-        <li class="nav_item"><a class="nav_link link" href="">About</a></li>
-        <li class="nav_item"><a class="nav_link link" href="">Home</a></li>
-        <li class="nav_item"><a class="nav_link link" href="">Service</a></li>
-        <li class="nav_item"><a class="nav_link link" href="">Menu</a></li>
-        <li class="nav_item"><a class="nav_link link" href="">Contact</a></li>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Service</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Menu</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
       </ul>
     </nav>
+    <div class="subscribe">
+      <h3 class="subscribe__text">Subscribe</h3>
+      <form class="form" name="footer-form">
+        <input
+          class="form__email"
+          name="user-mail"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <button class="form__btn" type="submit">Subscribe</button>
+      </form>
+      <p class="subscribe__privacy">
+        By subscribing you agree to with our
+        <a class="privacy__link" href="">Privacy Policy</a>
+      </p>
+    </div>
   </div>
 
-  <div class="subscribe">
-    <h3 class="subscribe__text">Subscribe</h3>
-    <form class="form" name="footer-form">
-      <input
-        class="form__email"
-        name="user-mail"
-        type="email"
-        placeholder="Enter your email"
-      />
-      <button class="form__btn" type="submit">Subscribe</button>
-    </form>
-    <p class="subscrible_privecy">
-      By subscribing you agree to with our
-      <a class="privecy_link" href="">Privacy Policy</a>
-    </p>
-  </div>
-
-  <div class="agreement">
-    <a class="agreement_link" href="">Privacy Policy</a>
-    <a class="agreement_link" href="">Terms of Service</a>
-    <a class="agreement_link" href="">Cookies Settings</a>
+  <div class="container agreement">
+    <a class="agreement__link" href="">Privacy Policy</a>
+    <a class="agreement__link" href="">Terms of Service</a>
+    <a class="agreement__link" href="">Cookies Settings</a>
 
     <p class="">2022 FoodSta. All right reserved.</p>
   </div>
