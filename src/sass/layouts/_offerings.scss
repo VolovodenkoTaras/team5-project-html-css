@@ -1,1 +1,55 @@
-//Offerings styles
+.offerings__img {
+    margin-bottom: 60px;
+}
+
+.offerings__img-list {
+    display: none;
+}
+
+.offerings__title {
+    margin-bottom: 28px;
+    text-align: left;
+    max-width: 280px;
+}
+
+.offerings__desc {
+    margin-bottom: 28px;
+}
+
+.offerings__list {
+    @extend %list;
+}
+
+.offerings__item {
+    margin-bottom: 28px;
+}
+
+.offerings__icon {
+    margin-bottom: 8px;
+}
+
+.offerings__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    margin-bottom: 16px;
+}
+
+.offerings__btn {
+    margin-right: 24px;
+}
+
+.offerings__link {
+    @extend %link;
+    position: relative;
+    line-height: calc(20 / 14);
+    color: $color-black;
+    margin-right: 8px;
+}
+
+.offerings__icon-link {
+    position: absolute;
+    top: 7px;
+    left: 73px;
+    color: $color-black;
+}
