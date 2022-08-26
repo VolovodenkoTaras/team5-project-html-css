@@ -1,6 +1,6 @@
 <section class="section offerings" id="offerings">
     <div class="container">
-        <picture class="offerings__img">
+        <picture class="offerings__img img">
             <source
               media="(min-width: 1280px)"
               srcset="
@@ -32,7 +32,7 @@
                 <img
                     srcset="./images/offerings/img@1x-2_md.png 1x , ./images/offerings/img@2x-2_md.png 2x"
                     src="./images/offerings/img@1x-2_md.png"
-                    class="offerings__image"
+                    class="offerings__image img"
                     alt="apple"
                     width="166"
                     height="211"
@@ -42,7 +42,7 @@
                 <img
                     srcset="./images/offerings/img@1x-3_sm.png 1x , ./images/offerings/img@2x-3_sm.png 2x"
                     src="./images/offerings/img@1x-3_sm.png"
-                    class="offerings__image"
+                    class="offerings__image img"
                     alt="small apple"
                     width="108"
                     height="136"
@@ -50,19 +50,33 @@
             </li>
         </ul>
             
-        <h2 class="section__title">What’s Special About Our Offerings</h2>
+        <h2 class="offerings__title section__title">What’s Special About Our Offerings</h2>
         <p class="offerings__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
         <ul class="offerings__list">
             <li class="offerings__item">
+              <svg class="offerings__icon" width="48" height="48">
+                <use href="./images/icon.svg#delivery"></use>
+              </svg>
                 <h3 class="offerings__subtitle">Fasest Delivery</h3>
                 <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </li>
             <li class="offerings__item">
+              <svg class="offerings__icon" width="48" height="48">
+                <use href="./images/icon.svg#order"></use>
+              </svg>
                 <h3 class="offerings__subtitle">Easy To Order</h3>
                 <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </li>
         </ul>
 
         <button class="offerings__btn" type="button">Order Now</button>
+        <a 
+          class="offerings__link" 
+          href="">Read More
+          <svg class="offerings__icon-link" width="9" height="5">
+            <use href="./images/icon.svg#rightArrow"></use>
+          </svg>
+        </a>
+
     </div>
 </section>
