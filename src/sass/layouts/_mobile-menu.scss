@@ -39,9 +39,12 @@
 .menu__item {
   padding: 16px 41px 16px 16px;
   cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: $color-green;
+    text-decoration: none;
+    color: inherit;
     &:first-child {
       border-radius: 30px 0px 0px 0px;
     }

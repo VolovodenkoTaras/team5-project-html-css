@@ -16,6 +16,11 @@
 }
 .nav__item {
   @extend %list;
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+    color: $color-green;
+  }
 }
 .nav__link {
   @extend %link;
