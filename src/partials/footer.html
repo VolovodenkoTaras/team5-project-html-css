@@ -1,7 +1,7 @@
 <footer class="footer" id="footer">
   <div class="container section">
     <div class="footer_container">
-      <a class="logo header__logo" href="">
+      <a class="logo header__logo logo__footer" href="">
         <img
           class="logo__icon footer__logo"
           src="./images/logo.svg"
@@ -27,18 +27,30 @@
           </li>
         </ul>
       </nav>
-      <div class="subscribe">
-        <h3 class="subscribe__text">Subscribe</h3>
+      <div class="subscribe-footer">
+        <h3 class="subscribe-footer__text">Subscribe</h3>
         <form class="form" name="footer-form">
-          <input
-            class="form__email"
-            name="user-mail"
-            type="email"
-            placeholder="Enter your email"
-          />
+          <div class="subscribe__error">
+            <input
+              class="form__email"
+              name="user-mail"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+            <label class="subscribe-footer__alert">
+              <svg subscribe-footer__alert-icon width="11" height="11">
+                <use href="./images/icon.svg#alert"></use>
+              </svg>
+              <span class="subscribe-footer__alert-text"
+                >Not a valid email address (example@email.com)</span
+              >
+            </label>
+          </div>
           <button class="form__btn" type="submit">Subscribe</button>
         </form>
-        <p class="subscribe__privacy">
+
+        <p class="subscribe-footer__privacy">
           By subscribing you agree to with our
           <a class="privacy__link" href="">Privacy Policy</a>
         </p>
