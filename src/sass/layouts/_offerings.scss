@@ -1,54 +1,78 @@
 .offerings {
-    max-width: 1280px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
 
-    
-    @media screen and (min-width: 768px) {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+    padding-top: 0;
+    padding-bottom: 0;
 
-        background-image: url(../images/offerings/bg@1x_sm.png);
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/offerings/bg@2x_sm.png);
-        }
+    &__content {
+            padding-top: 41px;
+            padding-bottom: 60px;
+        
+            @media screen and (min-width: 768px) {
+                padding-top: 150px;
+                padding-bottom: 100px;
+            }
+        
+            @media screen and (min-width: 1280px) {
+                display: flex;
+                gap: 90px;
+                padding-top: 177px;
+                padding-bottom: 43px;
+                align-items: center;
+            }
 
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/offerings/bg@1x_md.png);
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            background-image: url(../images/offerings/bg@1x_sm.png);
+               @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+              background-image: url(../images/offerings/bg@2x_sm.png);
+                   }
+
+              @media screen and (min-width: 768px) {
+                   background-image: url(../images/offerings/bg@1x_md.png);
+                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/offerings/bg@2x_md.png);
-        }
-    }
+                     }
+                   }
 
-    @media screen and (min-width: 1280px) {
-        background-image: url(../images/offerings/bg@1x_lg.png);
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+             @media screen and (min-width: 1280px) {
+                background-image: url(../images/offerings/bg@1x_lg.png);
+              @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/offerings/bg@2x_lg.png);
-        }
-    }
+                  }
+                }
     
+}
 }
 
 .offerings__group {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: 1280px) {
-        display: flex;
-        gap: 90px;
-        justify-content: center;
-        align-items: center;
+      margin: 0;
     }
 }
 
-.offerings__img {
+.offerings__picture {
     display: block;
     margin-bottom: 60px;
 
     @media screen and (min-width: 1280px){
         margin-bottom: 0;
+    }
+}
+
+  .offerings__img {
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+.offerings__thumb {
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      width: 526px;
+      margin-bottom: 40px;
     }
 }
 
@@ -62,8 +86,6 @@
 }
 
 .offerings__desc {
-    margin-bottom: 28px;
-
     @media screen and (min-width: 768px) {
         margin-bottom: 40px;
         font-size: 16px;
@@ -76,16 +98,57 @@
 }
 
 .offerings__list {
-    @extend %list;
-
+    margin-bottom: 28px;
     @media screen and (min-width: 768px) {
-        display: flex;
-        gap: 116px;
+      display: flex;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
     }
 }
 
-.offerings__icon {
-    margin-bottom: 8px;
+.offerings__item {
+    &:first-child {
+        margin-bottom: 28px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-bottom: 8px;
+        background-color: #ffffff;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 252px;
+
+        &:first-child {
+            margin-bottom: 0;
+            margin-right: 116px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        &:first-child {
+            margin-right: 67px;
+        }
+    }
+}
+
+.offerings__delivery::before {
+    background-image: url(../images/offerings/delivery.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offerings__order::before {
+    background-image: url(../images/offerings/order.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .offerings__subtitle {
