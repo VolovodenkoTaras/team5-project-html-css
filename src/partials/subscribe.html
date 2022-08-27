@@ -1,26 +1,38 @@
 <section class="section subscribe" id="subscribe">
-  <div class="container subscribe__container">
-    <!-- <img src="" alt="" /> -->
-    <h2 class="section__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__text">
+  <div class="container subscribe-main">
+    <div class="subscribe-picture">
+    <img
+    class="subscribe-picture__photo"
+    srcset="
+    ./images/subscription/banan_mob_280@1x.png 280w,
+    ./images/subscription/banan_mob_560@2x.png 560w,
+    ./images/subscription/banan_tab_281@1x.png 281w,
+    ./images/subscription/banan_tab_562@2x.png 562w,
+    ./images/subscription/banan_desk_608@1x.png 608w,
+    ./images/subscription/banan_desk_1216@2x.png 1216w"
+ 
+    sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, 100vw"
+    src="./images/subscription/banan_mob_280@1x.png"
+    alt="Photo banan"/>
+  </div>
+ <div class="subscribe-block">
+    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe__txt">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique.
     </p>
-    <div class="subscribe__window">
-      <form class="subscribe__form" name="subscribe__form">
+    <div class="subscribe-registration">
+      <form class="subscribe-form" name="subscribe-form">
         <input
-          class="subscribe__input"
+          class="subscribe-form__input"
           type="email"
-          name="user--email"
+          name="email"
           placeholder="Enter your email"
+          required
         />
-        <button type="submit" class="subscribe__button">
-          Subscribe
-          <!-- <svg class="subscribe__icon">
-            <use href="" width="" height=""></use>
-          </svg> -->
-        </button>
+        <button class="subscribe-form__btn" type="submit">Subscribe</button>
       </form>
     </div>
+  </div>
   </div>
 </section>
