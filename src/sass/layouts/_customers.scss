@@ -1,1 +1,126 @@
 //Customers styles
+
+
+.customer {
+    @media screen and (min-width: $mobile) {
+        width: 280px;
+        
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+.customer__container {
+    
+    @media screen and (min-width: 480px){
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 336px;
+        
+    }
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+}
+.section__title {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 280px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 501px;
+        padding-bottom: 20px;
+        padding-top: 60px;
+        
+    }
+    @media screen and (min-width: 1280px){
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+}
+
+
+.customer__text {
+    width: 280px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px){
+        width: 395px;
+        margin-bottom: 32px;
+        
+    }
+
+}
+
+.review {
+    
+    @extend %list;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+    }
+    
+}
+.review__item {
+
+    width: 280px;
+    background-color: #ffffff;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px){
+        width: 336px;
+        
+    }
+
+}
+.review__item:last-child{
+    margin-bottom: 0;
+}
+
+.review__stars {
+    fill: yellow;
+    margin-bottom: 28px;
+    margin-top: 8px;;
+}
+.review__text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(18 / 16);
+    margin-bottom: 42px;
+    width: 312px;
+}
+.person {
+    display: flex;
+    gap: 8px;
+    
+}
+.person__name {
+    font-weight: 500;
+    
+}
+.person__desk {
+    font-weight: 400;
+}

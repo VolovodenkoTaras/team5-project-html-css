@@ -1,1 +1,79 @@
 //Subscribe styles
+.subscribe {
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        ;
+
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+
+
+}
+.subscribe__container {
+    @media screen and (min-width: 480px){
+        width: 280px;
+        
+    }
+    
+    
+    @media screen and (min-width: 768px){
+        width: 704px;
+        height: 340px;
+        
+    }
+    @media screen and (min-width: 1280px){
+        width: 1247px;
+    }
+}
+
+.subscribe__input {
+    box-sizing: border-box;
+    width: 279px;
+    height: 42px;
+    background-color: #ffffff;
+    border: 0.854167 solid#ffe550;
+    border-radius: 30px;
+    @media screen and (min-width: 768px){
+        width: 395px;
+        height: 42px;
+        
+    }
+    @media screen and (min-width: 1280px){
+        width: 395px;
+        height: 42px;
+    }
+
+}
+.subscribe__text {
+    font-weight: 400;
+    @media screen and (min-width: 768px){
+        font-size: 42px;
+        font-weight: 700;
+        line-height: calc(50 / 42);
+        width: 656px;
+
+        
+    }
+
+}
+.subscribe__button {
+    width: 103px;
+    height: 42px;
+    background-color: #BBF330;
+    border-radius: 30px;
+    margin-left: 197px;
+    margin-top: 20px;
+
+}
