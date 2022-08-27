@@ -9,8 +9,7 @@
 
     @media screen and (min-width: $tablet) {
         width: $tablet;
-        padding-right: 32px;
-        padding-left: 32px;
+        padding-left: 32px;;
     }
 
     @media screen and (min-width: $desktop) {
@@ -38,6 +37,7 @@
 
     @media screen and (min-width: 768px){
         width: 336px;
+        display: contents;
         
     }
     @media screen and (min-width: 1280px){
@@ -123,4 +123,7 @@
 }
 .person__desk {
     font-weight: 400;
+}
+.person__list {
+    display: flex;
 }
