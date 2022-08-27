@@ -6,26 +6,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
 
-    background-image: url(../images/offerings/bg@1x_sm.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/offerings/bg@2x_sm.png);
-    }
-
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/offerings/bg@1x_md.png);
-
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/offerings/bg@2x_md.png);
-        }
-    }
-
+.offerings__group {
     @media screen and (min-width: 1280px) {
-        background-image: url(../images/offerings/bg@1x_lg.png);
-
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/offerings/bg@2x_lg.png);
-        }
+        display: flex;
+        gap: 90px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -51,9 +39,15 @@
 .offerings__desc {
     margin-bottom: 28px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         max-width: 500px;
         margin-bottom: 40px;
+        font-size: 16px;
+        line-height: calc(19 / 16);
+    }
+
+    @media screen and (min-width: 768px) {
+        line-height: calc(24 / 16);
     }
 }
 
@@ -64,10 +58,6 @@
         display: flex;
         gap: 116px;
     }
-}
-
-.offerings__item {
-    margin-bottom: 28px;
 }
 
 .offerings__icon {
@@ -81,8 +71,35 @@
     margin-bottom: 16px;
 }
 
+.offerings__text {
+    margin-bottom: 28px;
+    max-width: 252px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        line-height: calc(21 / 14);
+    }
+}
+
 .offerings__btn {
+    max-width: 154px;
+    height: 40px;
+    padding: 10px 22px;
+
+    background: $color-white ;
+    border: 2px solid $color-green-dark;
+    border-radius: 30px;
+
     margin-right: 24px;
+
+    &:hover {
+        @media screen and (min-width: 1280px) {
+            border: 2px solid $color-olive;
+        }
+    }
 }
 
 .offerings__link {
@@ -91,11 +108,15 @@
     line-height: calc(20 / 14);
     color: $color-black;
     margin-right: 8px;
-}
 
-.offerings__icon-link {
-    position: absolute;
-    top: 7px;
-    left: 73px;
-    color: $color-black;
+    &__icon-link {
+        position: absolute;
+        top: 7px;
+        left: 73px;
+        color: $color-black;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
