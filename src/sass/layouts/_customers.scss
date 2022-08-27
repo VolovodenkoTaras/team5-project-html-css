@@ -1,78 +1,86 @@
-//Customers styles
-
-
 .customer {
-    @media screen and (min-width: $mobile) {
-        width: 280px;
+    // @media screen and (min-width: $mobile) {
+    //     width: 280px;
         
-    }
+    // }
 
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //     width: $tablet;
+    //     padding-left: 32px;;
+    // }
 
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-
+    // @media screen and (min-width: $desktop) {
+    //     width: $desktop;
+    //     padding-right: 16px;
+    //     padding-left: 16px;
+    // }
     
-    padding-top: 100px;
-    padding-bottom: 0px;
-    margin: 0 auto;
+    background-image: url("../images/customers/customersBg-mob.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    
-    
-}
-.customer__container {
-    
-    @media screen and (min-width: 480px){
-        width: 280px;
+
+    &__title {
+        text-align: left;
     }
 
-    @media screen and (min-width: 768px){
-        width: 336px;
-        
-    }
-    @media screen and (min-width: 1280px){
-        width: 1280px;
-    }
-}
-.section__title {
-    margin-bottom: 20px;
-    text-align: left;
-    max-width: 280px;
-
-    @media screen and (min-width: 768px) {
-        max-width: 501px;
-        padding-bottom: 20px;
-        padding-top: 60px;
-        
-    }
-    @media screen and (min-width: 1280px){
-        padding-top: 100px;
-        padding-bottom: 20px;
-    }
-}
-
-
-.customer__text {
-    width: 280px;
-    margin-bottom: 32px;
-
-    @media screen and (min-width: 768px){
-        width: 395px;
+     
+    &__text {
+        text-align: center;
         margin-bottom: 32px;
-        
-    }
 
+        @include media-query(tablet) {
+                font-size: 16px;
+                line-height: calc(19 / 16);
+            }
+     }
+    
 }
+// .customer__container {
+    
+//     // @media screen and (min-width: 480px){
+//     //     width: 280px;
+//     // }
+
+//     // @media screen and (min-width: 768px){
+//     //     width: 336px;
+//     //     display: contents;
+        
+//     // }
+//     // @media screen and (min-width: 1280px){
+//     //     width: 1280px;
+//     // }
+// }
+// .section__title {
+//     margin-bottom: 20px;
+//     text-align: left;
+//     max-width: 280px;
+
+//     @media screen and (min-width: 768px) {
+//         max-width: 501px;
+//         padding-bottom: 20px;
+//         padding-top: 60px;
+        
+//     }
+//     @media screen and (min-width: 1280px){
+//         padding-top: 100px;
+//         padding-bottom: 20px;
+//     }
+// }
+
+
+// .customer__text {
+//     width: 280px;
+//     margin-bottom: 32px;
+
+//     @media screen and (min-width: 768px){
+//         width: 395px;
+//         margin-bottom: 32px;
+        
+//     }
+
+// }
 
 .review {
     
@@ -85,15 +93,17 @@
     
 }
 .review__item {
+    padding: 8px;
 
-    width: 280px;
-    background-color: #ffffff;
+    background-color: $color-white;
     margin-bottom: 24px;
 
-    @media screen and (min-width: 768px){
-        width: 336px;
+   border-radius: 0 10% 10% 10%;
+
+    // @media screen and (min-width: 768px){
+    //     width: 336px;
         
-    }
+    // }
 
 }
 .review__item:last-child{
@@ -103,24 +113,32 @@
 .review__stars {
     fill: yellow;
     margin-bottom: 28px;
-    margin-top: 8px;;
 }
-.review__text{
+
+.review__text {
     font-size: 16px;
     font-weight: 700;
     line-height: calc(18 / 16);
     margin-bottom: 42px;
-    width: 312px;
 }
 .person {
-    display: flex;
-    gap: 8px;
+   
+    border-right: 0.854167px solid #7EB101;
+    max-width: 160px;
+
+   display: flex;
+
     
 }
+
+.person__img {
+    margin-right: 17px;
+}
+
 .person__name {
     font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 2px;
     
 }
-.person__desk {
-    font-weight: 400;
-}
+
