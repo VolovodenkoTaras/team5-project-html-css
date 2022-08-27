@@ -5,7 +5,7 @@
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 
     
     @media screen and (min-width: 768px) {
@@ -55,20 +55,16 @@
 .offerings__title {
     margin-bottom: 28px;
     text-align: left;
-    max-width: 280px;
 
     @media screen and (min-width: 768px) {
-        max-width: 526px;
         margin-bottom: 20px;
     }
 }
 
 .offerings__desc {
     margin-bottom: 28px;
-    max-width: 272px;
 
     @media screen and (min-width: 768px) {
-        max-width: 500px;
         margin-bottom: 40px;
         font-size: 16px;
         line-height: calc(19 / 16);
@@ -101,7 +97,6 @@
 
 .offerings__text {
     margin-bottom: 28px;
-    max-width: 252px;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 40px;
