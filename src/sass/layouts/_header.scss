@@ -62,12 +62,12 @@
 .nav__link {
   @extend %link;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: calc(19 / 16);
   color: inherit;
 
-  @media screen and(min-width: $tablet) and (min-width: $desktop) {
-    font-size: inherit;
-    line-height: inherit;
+  @media screen and (min-width: $tablet)  {
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
 }
 
