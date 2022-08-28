@@ -1,0 +1,264 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s all;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  width: 450px;
+  min-height: 606px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  border-radius: 30px 0px 30px 30px;
+
+  transition: 0.3s all;
+  opacity: 1;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 449px) {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  fill: $color-black-second;
+  transition: fill $cubic;
+
+  &:active {
+    fill: $color-green-dark;
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    &:focus {
+      fill: $color-green-dark;
+    }
+  }
+}
+
+.register {
+  text-align: center;
+}
+
+.register__title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-black-second;
+
+  @media screen and (min-width: 1280px) {
+    line-height: calc(23 / 20);
+  }
+}
+
+.register__group {
+  margin-bottom: 20px;
+}
+
+.register__wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.register__label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.register__input,
+.register__message {
+  width: 100%;
+  padding: 10px;
+  padding-left: 40px;
+
+  width: 100%;
+  height: 42px;
+  background-color: $color-white;
+  border: 0.854167 solid $color-yellow;
+  border-radius: 30px;
+  outline: transparent;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+
+  transition: border $cubic;
+}
+.register__input {
+  &:not(:placeholder-shown):required:valid {
+    border-color: $color-green-dark;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border-color: $color-peach;
+    & ~ .register__alert {
+      opacity: 1;
+    }
+  }
+}
+.register__alert {
+  opacity: 0;
+}
+.register__message:hover,
+.register__message:focus {
+  border: 1px solid $color-green-dark;
+}
+
+.register__message {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  transition: border $cubic;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: $color-grey;
+  }
+}
+
+.register__icon {
+  position: absolute;
+  bottom: 28px;
+  left: 12px;
+
+  transition: fill $color-yellow;
+}
+
+.register__input:focus-within + .register__icon {
+  fill: $color-green-dark;
+}
+
+.register__agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.register__checkbox {
+  @extend %visually-hidden;
+}
+
+.register__icon--uncheck {
+  .register__checkbox:checked + .register__icon-form & {
+    opacity: 0;
+    transition: opacity $cubic;
+  }
+}
+
+.register__icon--check {
+  opacity: 0;
+  transition: opacity $cubic;
+
+  .register__checkbox:checked + .register__icon-form & {
+    opacity: 1;
+    fill: $color-green-dark;
+  }
+}
+
+.register__agreement-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+  color: $color-black-second;
+
+  user-select: none;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
+.register__agreement-link {
+  color: $color-green-dark;
+  text-underline-position: under;
+}
+
+.register__btn {
+  display: inline-flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color-black-second;
+
+  height: 50px;
+  padding: 10px 52px;
+  background-color: $color-green;
+  border-radius: 30px;
+  border: transparent;
+  cursor: pointer;
+
+  transition: background-color $cubic, box-shadow $cubic;
+
+  &:active {
+    background-color: $color-green-accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    &:focus {
+      background-color: $cubic;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
