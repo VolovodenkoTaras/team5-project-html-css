@@ -2,9 +2,9 @@
    
     background-image: url("../images/customers/customersBg-mob.svg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    position: relative;
+    background-position: left bottom;
+    // position: relative;
 
     @media screen and (min-width: 768px) {
         background-image: url("../images/customers/customersBg-tabl.svg");
