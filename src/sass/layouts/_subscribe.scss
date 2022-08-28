@@ -130,14 +130,14 @@
     &:not(:placeholder-shown):required:invalid {
       border: 0.854167 solid $color-peach;
       background-color: transparent;
-      & ~ .subscribe-form__alert {
-        opacity: 1;
+      & ~ .subscribe-form-email__alert {
+        visibility: visible;
         display: block;
       }
     }
   }
   &__alert {
-    opacity: 0;
+    visibility: hidden;
     display: none;
   }
 
