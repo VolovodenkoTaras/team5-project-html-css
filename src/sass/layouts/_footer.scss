@@ -60,21 +60,6 @@
     margin-bottom: 80px;
   }
 }
-
-.footer__nav {
-  @media screen and (min-width: $desktop) {
-    margin-right: 320px;
-  }
-}
-
-.footer__list {
-  display: block;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-  }
-}
 .logo__footer {
   padding: 0;
 }
@@ -90,6 +75,22 @@
     padding: 0;
   }
 }
+
+.footer__nav {
+  @media screen and (min-width: $desktop) {
+    margin-right: 320px;
+  }
+}
+
+.footer__list {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+}
+
 .footer__item {
   margin-bottom: 20px;
   &:last-child {
@@ -220,6 +221,7 @@
   color: $color-green-dark;
   text-decoration-line: underline;
 }
+
 .agreement {
   @media screen and (min-width: $tablet) {
     display: flex;
