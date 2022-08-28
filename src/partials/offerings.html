@@ -64,7 +64,7 @@
       </ul>
 
       <div class="offerings__options">
-        <button class="offerings__btn" type="button">Order Now</button>
+        <button class="offerings__btn" type="button" data-modal-open>Order Now</button>
         <a class="offerings__link" href=""
           >Read More
           <svg class="offerings__icon-link" width="9" height="5">
@@ -74,4 +74,68 @@
       </div>
     </div>
   </div>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-modal-close>
+        <svg class="modal-btn__icon" width="28" height="28">
+          <use href="./images/close.svg#icon-mob_menu_close"></use>
+        </svg>
+      </button>
+
+ 
+       <form class="register">
+        <strong class="register__title">Write your contacts and we will call you back.</strong>
+        <div class="register__group" role="group">
+
+        <label class="register__wrap">
+          <span class="register__label">Name</span>
+          <input class="register__input" type="text" name="user-name" autofocus/>
+          <!-- <svg class="register__icon" width="" height="">
+            <use href=""></use>
+          </svg> -->
+        </label> 
+
+        <label class="register__wrap">
+          <span class="register__label">Tel</span>
+          <input class="register__input" type="tel" name="user-phone" />
+          <!-- <svg class="register__icon" width="" height="">
+            <use href=""></use>
+          </svg> -->
+        </label> 
+
+        <label class="register__wrap">
+          <span class="register__label">Mail</span>
+          <input class="register__input" type="email" name="user-email" />
+          <!-- <svg class="register__icon" width="" height="">
+            <use href=""></use>
+          </svg> -->
+        </label>
+
+        <label class="register__wrap">
+          <span class="register__label">Comment</span>
+          <textarea class="register__message" rows="5" placeholder="Write your text"></textarea>
+        </label>
+        </div>
+
+        <label class="register__agreement">
+          <input class="register__checkbox register__checkbox--visually-hidden" type="checkbox" name="agreement"/>
+          <!-- <svg class="register__icon-form" width="" height="">
+            <use class="register__icon register__icon--uncheck" href=""></use>
+            <use class="register__icon register__icon--check" href=""></use>
+          </svg> -->
+         <span class="register__agreement-text">
+            I agree with the mailing and accept
+            <a class="register__agreement-link" href="">Terms of the contract</a>
+            </span>                
+        </label> 
+
+        <button class="register__btn" type="submit">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
+
+<script src="./js/modal.js"></script>
