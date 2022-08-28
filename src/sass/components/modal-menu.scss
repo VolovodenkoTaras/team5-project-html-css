@@ -142,7 +142,9 @@
 
      
      .register__input:focus,
-     .register__message:focus {
+     .register__message:focus,
+     .register__input:hover,
+     .register__message:hover {
         border: 1px solid $color-green-dark;
      }
      
