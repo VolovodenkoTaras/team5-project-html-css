@@ -1,1 +1,15 @@
 //Buttons style
+
+.btn--animation:hover {
+
+    animation-play-state:running;
+    // animation: turning 2s ease-out 0.5s infinite alternate;
+    animation-name: turning;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-out;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    }
+    
