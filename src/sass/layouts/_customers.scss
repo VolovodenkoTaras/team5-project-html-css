@@ -15,7 +15,7 @@
         
         margin-bottom: 32px;
 
-        @include media-query(tablet) {
+        @media screen and (min-width: 768px) {
                 font-size: 16px;
                 line-height: calc(19 / 16);
             }
@@ -33,24 +33,34 @@
         gap: 32px;
     }
     &__item {
-        padding: 8px;
-    
-        background-color: $color-white;
-        margin-bottom: 24px;
         
-       border-radius: 0% 10% 10% 10%;
+        padding: 8px;
+        margin-left: auto;
+        background-color: $color-white;
+        border-radius: 0 15px 15px;
+        margin-bottom: 24px;
     
-       @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px){
         margin-bottom: 0px;
         
     }
-    @media screen and (min-width: 1280px){
-        border-radius: 0% 10% 10% 10%;
-        
-          
-    }
-    }   
+        @media screen and (min-width: 1280px){
+        margin-right: 139px;; 
+          }
+         }   
 }
+.review__item--down {
+    
+        padding: 8px;
+        margin-left: auto;
+        background-color: $color-white;
+        border-radius: 0 15px 15px;
+
+    @media screen and (min-width: 1280px){
+        margin-right: 123px;; 
+          }
+         }  
+
 
 .review__stars {
     fill: yellow;
@@ -78,17 +88,17 @@
    
     border-right: 0.854167px solid #7EB101;
     max-width: 160px;
-
     display: flex;
+    
 
    &__img {
     margin-right: 17px;
 
-    @include media-query(tablet){
+    @media screen and (min-width: $tablet){
         padding-left: 12px;
         padding-bottom: 14px;
     }
-    @include media-query(desktop){
+    @media screen and (min-width: $desktop){
 padding-left: 14px;
 padding-bottom: 16px;
 
@@ -96,13 +106,27 @@ padding-bottom: 16px;
 
 }
 
- &__name {
-    font-weight: 500;
-    margin-top: 4px;
-    margin-bottom: 2px;
+}
+
+.person__clients {
+    margin-top: 10px;
+    }
+.person__name {
+color: #2c2c2c;
+font-size: 14px;
+font-weight: 500;
+line-height: 1,5em;
+
     
 }
-}
+  .person__desk {
+color: #2c2c2c;
+font-size: 14px;
+font-weight: 400;
+line-height: 1,5em;
+display: inline;
+ }
+
 
 
 
