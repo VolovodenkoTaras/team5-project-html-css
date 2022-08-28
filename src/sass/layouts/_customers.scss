@@ -5,6 +5,14 @@
     background-position: center;
     background-size: cover;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/customers/customersBg-tabl.svg");
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../images/customers/customersBg-desk.svg");
+    }
     
 
     &__title {
@@ -15,7 +23,7 @@
         
         margin-bottom: 32px;
 
-        @media screen and (min-width: 768px) {
+        @include media-query(tablet) {
                 font-size: 16px;
                 line-height: calc(19 / 16);
             }
@@ -32,35 +40,36 @@
         display: flex;
         gap: 32px;
     }
-    &__item {
-        
-        padding: 8px;
-        margin-left: auto;
-        background-color: $color-white;
-        border-radius: 0 15px 15px;
-        margin-bottom: 24px;
-    
-        @media screen and (min-width: 768px){
-        margin-bottom: 0px;
-        
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 139px;
     }
-        @media screen and (min-width: 1280px){
-        margin-right: 139px;; 
-          }
-         }   
-}
-.review__item--down {
-    
+
+
+    &__item {
         padding: 8px;
-        margin-left: auto;
+    
         background-color: $color-white;
-        border-radius: 0 15px 15px;
+        margin-bottom: 24px;
+        
+       border-radius: 0% 10% 10% 10%;
+    
+       @media screen and (min-width: 768px){
+        margin-bottom: 0px;
+            }
 
-    @media screen and (min-width: 1280px){
-        margin-right: 123px;; 
-          }
-         }  
+       }   
 
+       &__item:nth-child(2) {
+       @media screen and (min-width: 1280px){
+        margin-right: 107px;
+            }
+
+       }   
+
+
+}
 
 .review__stars {
     fill: yellow;
@@ -88,17 +97,17 @@
    
     border-right: 0.854167px solid #7EB101;
     max-width: 160px;
+
     display: flex;
-    
 
    &__img {
     margin-right: 17px;
 
-    @media screen and (min-width: $tablet){
+    @include media-query(tablet){
         padding-left: 12px;
         padding-bottom: 14px;
     }
-    @media screen and (min-width: $desktop){
+    @include media-query(desktop){
 padding-left: 14px;
 padding-bottom: 16px;
 
@@ -106,27 +115,11 @@ padding-bottom: 16px;
 
 }
 
-}
-
-.person__clients {
+ &__name {
+    font-weight: 500;
     margin-top: 10px;
-    }
-.person__name {
-color: #2c2c2c;
-font-size: 14px;
-font-weight: 500;
-line-height: 1,5em;
-
+    margin-bottom: 2px;
     
 }
-  .person__desk {
-color: #2c2c2c;
-font-size: 14px;
-font-weight: 400;
-line-height: 1,5em;
-display: inline;
- }
-
-
-
+}
 
