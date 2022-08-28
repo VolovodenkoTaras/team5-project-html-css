@@ -64,10 +64,10 @@
     line-height: inherit;
   }
 }
-.nav__link--current {
-  color: $color-green;
-  text-decoration-line: underline;
-}
+// .nav__link--current {
+//   color: $color-green;
+//   text-decoration-line: underline;
+// }
 .header__nav {
   display: none;
   @media screen and(min-width: $tablet) {
