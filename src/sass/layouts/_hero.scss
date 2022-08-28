@@ -2,8 +2,10 @@
 .hero {
   @media screen and (min-width: 1280px) {
     margin-top: 0;
+    padding-top: 0;
   }
 }
+
 .hero-main {
   @media screen and (min-width: 768px) {
     position: relative;
@@ -22,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
 
-  max-width: 280px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     max-width: 537px;
@@ -40,14 +42,17 @@
     line-height: calc(33 / 28);
 
     display: block;
+    max-width: 280px;
 
     @media screen and (min-width: 768px) {
+      max-width: 537px;
       font-size: 42px;
       line-height: calc(50 / 42);
       margin-bottom: 44px;
     }
 
     @media screen and (min-width: 1280px) {
+      max-width: 502px;
       font-size: 48px;
       line-height: calc(58 / 48);
     }
@@ -90,10 +95,6 @@
     border-radius: 30px;
     padding: 6px 18px;
     width: 98px;
-
-    /*transition: box-shadow var(--anim);
-  
-      animation: btn-anim 2000ms ease 2000ms;*/
   }
   &__btn:hover,
   &__btn:focus,
@@ -102,8 +103,40 @@
   }
 }
 
+.slider {
+  display: none;
 
-.hero-img__photo {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    display: flex;
+    width: 336px;
+    height: 320px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 14px;
+    right: 16px;
+    width: 608px;
+    height: 580px;
+  }
+}
+.swiper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+  }
+}
+.swiper-slide {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -117,60 +150,51 @@
   }
 }
 
- 
-.swiper {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    bottom: 0;
-    right: 32px;
-    display: flex;
-    width: 320px;
-    height: 320px;
-  }
-  @media screen and (min-width: 1280px) {
-    top: 14px;
-    right: 16px;
-    width: 580px;
-    height: 580px;
-  }
-}
 .swiper-button-next {
   right: 0px;
 }
 .swiper-button-prev {
-  left: 0;
+  left: 0px;
 }
-  .swiper-button-next, .swiper-button-prev {
-    color: $color-black-second;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
-    cursor: pointer;
-@media screen and (min-width: 768px) {
-      width: 34px;
-      height: 28px;}
-      @media screen and (min-width: 1280px) {
-        width: 48px;
-        height: 40px;
-      }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: $color-black-second;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  cursor: pointer;
 
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 28px;
   }
-  .swiper-button-next, .swiper-button-prev:hover,.swiper-button-next, .swiper-button-prev:focus
-   {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-    color: #7EB101;
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
   }
 
-  .swiper-button-next:after, .swiper-button-prev:after {
+  &:after,
+  &:after {
     @media screen and (min-width: 768px) {
-    font-size: 20px;
-    text-align: center;}
+      font-size: 20px;
+      text-align: center;
+    }
     @media screen and (min-width: 1280px) {
       font-size: 28px;
-    text-align: center;
+      text-align: center;
     }
-
   }
+  &:hover,
+  &:hover,
+  &:focus,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    color: $color-green-dark;
+  }
+  &:active,
+  &:active {
+    color: $color-black-second;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
+}
