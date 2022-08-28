@@ -5,6 +5,14 @@
     background-position: center;
     background-size: cover;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/customers/customersBg-tabl.svg");
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../images/customers/customersBg-desk.svg");
+    }
     
 
     &__title {
@@ -32,6 +40,13 @@
         display: flex;
         gap: 32px;
     }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 139px;
+    }
+
+
     &__item {
         padding: 8px;
     
@@ -42,14 +57,18 @@
     
        @media screen and (min-width: 768px){
         margin-bottom: 0px;
-        
-    }
-    @media screen and (min-width: 1280px){
-        border-radius: 0% 10% 10% 10%;
-        
-          
-    }
-    }   
+            }
+
+       }   
+
+       &__item:nth-child(2) {
+       @media screen and (min-width: 1280px){
+        margin-right: 107px;
+            }
+
+       }   
+
+
 }
 
 .review__stars {
