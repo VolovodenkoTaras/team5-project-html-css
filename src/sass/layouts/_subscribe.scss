@@ -130,7 +130,7 @@
     &:not(:placeholder-shown):required:invalid {
       border: 0.854167 solid $color-peach;
       background-color: transparent;
-      & ~ .subscribe-form__alert {
+      & ~ .subscribe-form-email__alert {
         opacity: 1;
         display: block;
       }
