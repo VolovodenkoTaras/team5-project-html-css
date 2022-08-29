@@ -1,15 +1,28 @@
 //Subscribe styles
 .subscribe {
-  margin-top: -43px;
+ 
   padding-top: 0;
+  padding-bottom: 17px;
+
   @include media-query(tablet) {
-    margin-top: -72px;
+padding-bottom: 28px;
   }
   @include media-query(desktop) {
-    margin-top: -66px;
+  padding-bottom: 2px;
   }
 }
 .subscribe-main {
+  position: relative;
+ top: -43px;
+ @include media-query(tablet) {
+top:-72px;
+}
+@include media-query(desktop) {
+  top: -66px;
+}
+}
+
+.subscribe-content {
   @include media-query(desktop) {
     display: flex;
     flex-direction: row-reverse;
