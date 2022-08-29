@@ -1,11 +1,14 @@
 .hero {
 
   @include media-query(tablet) {
-      padding: 60px 0;
+  
+     padding-top: 60px;
+      // margin-top: 60px;
+  
     }
-  @include media-query(desktop) {
-   padding: 14px 0;
-  }
+  // @include media-query(desktop) {
+  //  padding: 14px 0;
+  // }
 }
 
 .hero-main {
