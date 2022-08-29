@@ -20,10 +20,11 @@
             @extend %list;
 
             display: grid;
-            grid-gap: 32px;
+            grid-gap: 20px;
             grid-template-columns: repeat(1, 1fr);
 
-        @include media-query(tablet) {    
+        @include media-query(tablet) { 
+                grid-gap: 32px;
                 grid-template-columns: repeat(2, 1fr);
             }
         
