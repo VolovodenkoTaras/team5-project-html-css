@@ -1,12 +1,14 @@
 //Buttons style
 
-.btn--animation:hover {
+.btn--animation:hover,
+.btn--animation:focus
+ {
 
     animation-play-state:running;
     // animation: turning 2s ease-out 0.5s infinite alternate;
     animation-name: turning;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-out;
+    animation-duration: 750ms;
+    animation-timing-function: linear;
     animation-delay: 500ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
@@ -24,8 +26,8 @@
     align-items: center;
 }
 
-.header__btn:hover,
-.header__btn:focus {
+.btn--animation:hover,
+.btn--animation:focus {
     background-color: $color-green-accent;
     box-shadow: 0 0 5px $color-green-accent,
         0 0 25px $color-green-accent,
@@ -46,7 +48,7 @@
     left: -100%;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, transparent, $color-yellow);
+    background: linear-gradient(90deg, transparent, yellow);
     animation: btn-anim1 2s linear infinite;
 }
 
@@ -55,7 +57,7 @@
     right: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, $color-yellow);
+    background: linear-gradient(180deg, transparent, yellow);
     animation: btn-anim2 2s linear infinite;
     animation-delay: 0.5s
 }
@@ -65,7 +67,7 @@
     right: -100%;
     width: 100%;
     height: 5px;
-    background: linear-gradient(270deg, transparent, $color-yellow);
+    background: linear-gradient(270deg, transparent, yellow);
     animation: btn-anim3 2s linear infinite;
     animation-delay: 1s
 }
@@ -75,14 +77,14 @@
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, $color-yellow);
+    background: linear-gradient(360deg, transparent, yellow);
     animation: btn-anim4 2s linear infinite;
     animation-delay: 1.5s
 }
 
 
 
-.header__btn:focus .btn__item,
-.header__btn:hover .btn__item {
+.btn--animation:focus .btn__item,
+.btn--animation:hover .btn__item {
     animation: none;
 }
