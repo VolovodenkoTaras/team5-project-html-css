@@ -47,7 +47,7 @@
 .footer_container {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 480px) {
+  @include media-query(mobile) {
     justify-content: space-around;
   }
   @media screen and (min-width: $tablet) {
@@ -106,7 +106,8 @@
 .subscribe-footer {
   display: block;
   margin-bottom: 60px;
-  @media screen and (min-width: 480px) {
+  
+  @include media-query(mobile) {
     min-width: 280px;
   }
   @media screen and (min-width: $tablet) {
@@ -235,7 +236,7 @@
 
   margin-bottom: 40px;
 
-  @media screen and (min-width: 480px) {
+  @include media-query(mobile) {
     justify-content: center;
   }
   @media screen and (min-width: $tablet) {

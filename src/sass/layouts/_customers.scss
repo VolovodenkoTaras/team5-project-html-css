@@ -4,20 +4,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
-    // position: relative;
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         background-image: url("../images/customers/customersBg-tabl.svg");
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
         background-image: url("../images/customers/customersBg-desk.svg");
     }
     
 
     &__title {
         text-align: left;
-        @media screen and (min-width: 1280px){
+        @include media-query(desktop){
             margin-left: 16px;
             margin-bottom: 20px;
         }
@@ -31,7 +30,7 @@
                 font-size: 16px;
                 line-height: calc(19 / 16);
             }
-            @media screen and (min-width: 1280px){
+            @include media-query(desktop){
                 margin-left: 16px;
 
             }
@@ -47,12 +46,12 @@
     
     @extend %list;
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         display: flex;
         gap: 32px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
         display: flex;
         gap: 139px;
         margin-bottom: 134px;
@@ -68,32 +67,28 @@
         
        border-radius: 0 15px 15px;
     
-       @media screen and (min-width: 768px){
+       @include media-query(tablet){
         margin-bottom: 0px;
             }
 
-        @media screen and (min-width: 1280px){
+        @include media-query(desktop){
         margin-left: 16px;
             }
        }   
 
        &__item:nth-child(2) {
-       @media screen and (min-width: 1280px){
+       @include media-query(desktop){
         margin-right: 107px;
             }
-
        }   
-
-
 }
 
 .review__stars {
-    fill: yellow;
+    fill: $color-yellow;
     margin-bottom: 28px;
-    @media screen and (min-width: 1280px){
+    @include media-query(desktop){
         padding-top: 14px;
-    }
-    
+    }  
 }
 
 .review__text {
@@ -111,7 +106,7 @@
 
 .person {
    
-    border-right: 0.854167px solid #7EB101;
+    border-right: 0.854167px solid $color-green-dark;
     max-width: 160px;
 
     display: flex;
@@ -124,12 +119,12 @@
 } 
 }
 .review__item--down {
-    background-color: #ffffff;
+    background-color: $color-white;
     border-radius: 0 15px 15px;
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
-    @media screen and (min-width: 1280px){
+    @include media-query(desktop){
         margin-right: 123px;
     }
 }
@@ -138,20 +133,9 @@
     }
 
     .person__name {
-        // color: #2c2c2c;
-        // font-size: 14px;
-        // font-weight: 500;
-        // line-height: 1,5em;
         margin-bottom: 3px;
 
             @media screen and (min-width: $tablet){
                 margin-bottom: 4px;
             }
         }
-        // .person__desk {
-        // color: #2c2c2c;
-        // font-size: 14px;
-        // font-weight: 400;
-        // line-height: 1,5em;
-        // display: inline;
-        //  }

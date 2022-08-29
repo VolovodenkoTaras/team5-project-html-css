@@ -4,11 +4,11 @@
     padding-bottom: 0;
     
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         margin-top: -208px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
         margin-top: -261px;
     }
 
@@ -16,13 +16,13 @@
             padding-top: 41px;
             padding-bottom: 60px;
         
-            @media screen and (min-width: 768px) {
+            @include media-query(tablet) {
                 padding-top: 150px;
                 padding-bottom: 100px;
                 background-position: 50%;
             }
         
-            @media screen and (min-width: 1280px) {
+            @include media-query(desktop) {
                 display: flex;
                 gap: 90px;
                 padding-top: 177px;
@@ -50,14 +50,14 @@
             //   background-image: url(../images/offerings/bg@2x_sm.png);
             //        }
 
-            //   @media screen and (min-width: 768px) {
+            //   @include media-query(tablet) {
             //        background-image: url(../images/offerings/bg@1x_md.png);
             //      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             // background-image: url(../images/offerings/bg@2x_md.png);
             //          }
             //        }
 
-            //  @media screen and (min-width: 1280px) {
+            //  @include media-query(desktop) {
             //     background-image: url(../images/offerings/bg@1x_lg.png);
             //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             // background-image: url(../images/offerings/bg@2x_lg.png);
@@ -71,7 +71,7 @@
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
       margin: 0;
     }
 }
@@ -80,7 +80,7 @@
     display: block;
     margin-bottom: 60px;
 
-    @media screen and (min-width: 1280px){
+    @include media-query(desktop){
         margin-bottom: 0;
     }
 }
@@ -92,7 +92,7 @@
 
 .offerings__thumb {
     margin-bottom: 28px;
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
       width: 526px;
       margin-bottom: 40px;
     }
@@ -102,19 +102,19 @@
     margin-bottom: 28px;
     text-align: left;
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         margin-bottom: 20px;
     }
 }
 
 .offerings__desc {
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         margin-bottom: 40px;
         font-size: 16px;
         line-height: calc(19 / 16);
     }
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         line-height: calc(24 / 16);
     }
 }
@@ -123,11 +123,11 @@
     @extend %list;
 
     margin-bottom: 28px;
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
       display: flex;
       margin-bottom: 40px;
     }
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
       margin-bottom: 32px;
     }
 }
@@ -144,10 +144,10 @@
         height: 48px;
         border-radius: 50%;
         margin-bottom: 8px;
-        background-color: #ffffff;
+        background-color: $color-white;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         width: 252px;
 
         &:first-child {
@@ -156,7 +156,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
         &:first-child {
             margin-right: 67px;
         }
@@ -185,11 +185,11 @@
 .offerings__text {
     // margin-bottom: 28px;
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
         margin-bottom: 40px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
         line-height: calc(21 / 14);
     }
 }
@@ -207,7 +207,7 @@
     cursor: pointer;
 
     &:hover {
-        @media screen and (min-width: 1280px) {
+        @include media-query(desktop) {
             border: 2px solid $color-olive;
         }
     }
@@ -227,7 +227,7 @@
         color: $color-black;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
         display: none;
     }
 }

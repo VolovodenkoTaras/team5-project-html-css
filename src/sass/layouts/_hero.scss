@@ -1,18 +1,18 @@
 //Hero styles
 .hero {
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     margin-top: 0;
     padding-top: 0;
   }
 }
 
 .hero-main {
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     position: relative;
 
     height: 409px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -26,11 +26,11 @@
 
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     max-width: 537px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     max-width: 502px;
   }
 
@@ -44,14 +44,14 @@
     display: block;
     max-width: 280px;
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
       max-width: 537px;
       font-size: 42px;
       line-height: calc(50 / 42);
       margin-bottom: 44px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
       max-width: 502px;
       font-size: 48px;
       line-height: calc(58 / 48);
@@ -65,14 +65,14 @@
     font-size: 14px;
     line-height: calc(21 / 14);
 
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
       font-size: 16px;
       line-height: calc(24 / 16);
       width: 336px;
       margin-bottom: 40px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
       font-size: 16px;
       line-height: calc(24 / 16);
     }
@@ -106,7 +106,7 @@
 .slider {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     position: absolute;
     bottom: 0;
     right: 32px;
@@ -114,7 +114,7 @@
     width: 336px;
     height: 320px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     top: 14px;
     right: 16px;
     width: 608px;
@@ -124,28 +124,28 @@
 .swiper {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 320px;
     height: 320px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     width: 580px;
     height: 580px;
   }
 }
 .swiper-slide {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     display: flex;
 
     border: 14px solid $color-yellow;
     border-radius: 50%;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     border: 26px solid $color-yellow;
   }
 }
@@ -160,27 +160,27 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: $color-black-second;
-  background-color: #ffffff;
+  background-color: $color-white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @include media-query(tablet) {
     width: 34px;
     height: 28px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-query(desktop) {
     width: 48px;
     height: 40px;
   }
 
   &:after,
   &:after {
-    @media screen and (min-width: 768px) {
+    @include media-query(tablet) {
       font-size: 20px;
       text-align: center;
     }
-    @media screen and (min-width: 1280px) {
+    @include media-query(desktop) {
       font-size: 28px;
       text-align: center;
     }
