@@ -23,64 +23,80 @@
 // }
 // }
 
-.subscribe-content {
+.subscribe__main {
   @include media-query(desktop) {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 }
-.subscribe-picture {
-  margin-bottom: 17px;
-  margin-left: auto;
+.subscribe__picture {
   margin-right: auto;
-  max-width: 266px;
-  height: 78px;
-  background-size: 266px 78px;
-  background-repeat: no-repeat;
-  background-image: url('../images/subscription/banan_mob_280@1x.png');
-  @media (min-device-pixel-ratio: 2),
+    margin-left: auto;
+    margin-bottom: 17px;
+  
+    width: 161px;
+    height: 78px;
+  
+    background-repeat: no-repeat;
+    background-size: 161px 78px;
+  
+    background-image: url('../images/subscription/banana-mob-161@1x.png');
+  
+    @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/subscription/banan_mob_560@2x.png');
-  }
-
-  @include media-query(tablet) {
-    margin-right: 0;
-    width: 281px;
-    height: 136px;
-    background-size: 281px 136px;
-    background-image: url('../images/subscription/banan_tab_281@1x.png');
-    @media (min-device-pixel-ratio: 2),
+      background-image: url('../images/subscription/banana-mob-322@2x.png');
+    }
+  
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+      margin-right: 0;
+  
+      width: 281px;
+      height: 136px;
+  
+      background-size: 281px 136px;
+  
+      background-image: url('../images/subscription/banana-tab-281@1x.png');
+  
+      @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/subscription/banan_tab_562@2x.png');
+        background-image: url('../images/subscription/banana-tab-562@2x.png');
+      }
     }
-  }
-  @include media-query(desktop) {
-    display: flex;
-    margin-bottom: 0;
-    min-width: 608px;
-    height: 266px;
-    background-size: 608px 266px;
-    background-image: url('../images/subscription/banan_desk_608@1x.png');
-    @media (min-device-pixel-ratio: 2),
+  
+    @media screen and (min-width: $desktop) {
+      display: block;
+      order: 2;
+      width: 546px;
+      height: 266px;
+      margin: 0;
+  
+      background-size: 546px 266px;
+  
+      background-image: url('../images/subscription/banana-desk-546@1x.png');
+  
+      @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/subscription/banan_desk_1216@2x.png');
+        background-image: url('../images/subscription/banana-desk-1092@2x.png');
+      }
     }
-  }
 }
-.subscribe-block {
-  @include media-query(desktop) {
-    display: block;
-
-    max-width: 656px;
-  }
+.subscribe__wrapper {
+  @media screen and (min-width: $tablet) {
+      width: 656px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      margin-right: 38px;
+    }
 }
 
-.subscribe-block__title {
+.subscribe__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 28px;
@@ -92,7 +108,7 @@
   }
 }
 
-.subscribe-block__txt {
+.subscribe__text {
   margin-bottom: 40px;
 
   @include media-query(tablet) {
@@ -102,7 +118,7 @@
   }
 }
 
-.subscribe-form {
+.subscribe__form {
   display: block;
   text-align: right;
   @include media-query(tablet) {
