@@ -1,4 +1,6 @@
 .customer {
+
+    &__content {
    
     background-image: url("../images/customers/customersBg-mob.svg");
     background-repeat: no-repeat;
@@ -12,7 +14,7 @@
     @include media-query(desktop) {
         background-image: url("../images/customers/customersBg-desk.svg");
     }
-    
+    }
 
     &__title {
         text-align: left;
