@@ -75,9 +75,9 @@
   display: none;
   border-radius: 30px;
   font-size: 14px;
-  line-height: 150%;
+  line-height: calc(16 / 14);
   background-color: $color-green;
-  width: 100px;
+  width: 98px;
   height: 32px;
   cursor: pointer;
   border: transparent;
