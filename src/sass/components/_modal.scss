@@ -28,12 +28,17 @@
   width: 100%;
   height: 449px;
   padding: 32px 20px;
-  background: $color-yellow;
+  background-image: radial-gradient(
+    circle at center,
+    $color-white,
+    $color-yellow
+  );
+
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  border-radius: 30px 0px 30px 30px;
+  border-radius: 30px 30px 30px 30px;
 
   animation: heartBeat 2000ms ease-in-out 200ms both;
-  
+
   @media screen and (min-width: 480px) {
     max-width: 458px;
     padding: 32px;
@@ -74,19 +79,19 @@
 
   @media screen and (min-width: 768px) {
     top: 12px;
-    right: 12px;;
+    right: 12px;
   }
 
   &:active {
     fill: $color-green-dark;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
   }
 
   @include media-query(desktop) {
     &:hover,
     &:focus {
       fill: $color-green-dark;
-      box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -101,7 +106,7 @@
 
   font-weight: 700;
   font-size: 24px;
-  line-height: calc(29/ 24);
+  line-height: calc(29 / 24);
   text-align: center;
   letter-spacing: 0.03em;
   color: $color-black-second;
@@ -152,10 +157,10 @@
 
   transition: box-shadow $cubic;
 
-    &:hover,
-    &:focus {
-      box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
-    }
+  &:hover,
+  &:focus {
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .register__input {
@@ -207,13 +212,18 @@
 
   transition: background-color $cubic, box-shadow $cubic;
 
-
-
   @include media-query(desktop) {
     &:hover {
       border: 2px solid $color-olive;
       background-color: $cubic;
-      box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
     }
   }
+}
+
+.alert__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  color: $color-peach;
 }
