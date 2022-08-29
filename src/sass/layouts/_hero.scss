@@ -1,50 +1,30 @@
-//Hero styles
-
-
 .hero {
-  // display: inline-flex;
-  // flex-direction: column;
-  // justify-content: center;
+  @include media-query(desktop) {
+padding: 14px 0;
+  }
+}
 
-  // width: 100%;
+.hero-main {
+  @include media-query(tablet) {
+    position: relative;
 
-  // @include media-query(tablet) {
-  //   max-width: 537px;
-  // }
+  }
+  @include media-query(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 608px;
+  }
+}
+.hero-block {
 
-  // @include media-query(desktop) {
-  //   max-width: 502px;
-  // }
-
-        @include media-query(desktop) {
-          padding: 14px 0;
-        }
-
-
-
-  &__main {
-      @include media-query(tablet) {
-        position: relative;
-  
-        // height: 409px;
-      }
-  
-      @include media-query(desktop) {
-        display: flex;
-        justify-content: space-between;
-  
-        // text-align: left;
-  
-        // height: 608px;
-      }
-    }
-
-  &__block {
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: space-between;
+  @include media-query(tablet) {
+    max-width: 537px;
   }
 
+  @include media-query(desktop) {
+    max-width: 502px;
+  }
 
   &__title {
     margin-bottom: 28px;
@@ -53,7 +33,7 @@
     font-size: 28px;
     line-height: calc(33 / 28);
 
-    // display: block;
+    display: block;
     max-width: 280px;
 
     @include media-query(tablet) {
@@ -64,14 +44,13 @@
     }
 
     @include media-query(desktop) {
-      width: 502px;
+      max-width: 502px;
       font-size: 48px;
       line-height: calc(58 / 48);
     }
   }
 
   &__text {
-    // display: block;
     margin-bottom: 28px;
 
     color: $color-black-second;
@@ -86,9 +65,9 @@
     }
 
     @include media-query(desktop) {
+      width: 502px;
       font-size: 16px;
       line-height: calc(24 / 16);
-      width: 502px;
     }
   }
 
@@ -121,19 +100,19 @@
   display: none;
 
   @include media-query(tablet) {
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: -73px;
     right: 32px;
     display: flex;
     width: 336px;
     height: 320px;
+    
   }
   @include media-query(desktop) {
-    // top: 14px;
-    // right: 16px;
+    position: relative;
+   bottom: 0;
     width: 608px;
     height: 580px;
-    border:0;
   }
 }
 .swiper {
@@ -147,8 +126,8 @@
     height: 320px;
   }
   @include media-query(desktop) {
-    width: 608px;
-    height: 608px;
+    width: 580px;
+    height: 580px;
   }
 }
 .swiper-slide {
