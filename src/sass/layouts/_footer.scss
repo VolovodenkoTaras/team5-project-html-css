@@ -76,18 +76,6 @@
 .logo__footer {
   padding: 0;
 }
-.footer__logo {
-  margin-right: 80px;
-
-  @media screen and (min-width: $tablet) {
-    margin-right: 141px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-right: 145px;
-    padding: 0;
-  }
-}
 
 .footer__nav {
   @media screen and (min-width: $desktop) {
