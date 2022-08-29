@@ -24,25 +24,25 @@
   transform: translate(-50%, -50%) scale(1);
   z-index: 30;
 
-  
-  max-width: 450px;
+  width: 320px;
   width: 100%;
-  max-height: 609px;
-  padding: 20px;
-  background: #ffffff;
+  height: 449px;
+  padding: 32px 20px;
+  background: $color-yellow;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   border-radius: 30px 0px 30px 30px;
 
   animation: heartBeat 2000ms ease-in-out 200ms both;
   
   @media screen and (min-width: 480px) {
-    max-width: 445px;
+    max-width: 458px;
+    padding: 32px;
     margin: 0 auto;
   }
 
-  @include media-query(desktop) {
-    max-width: 530px;
-  }
+  // @include media-query(desktop) {
+  //   max-width: 530px;
+  // }
 
   .backdrop.is-hidden & {
     transform: translate(0px, -100%) scale(1.1);
@@ -53,29 +53,40 @@
 
 .modal-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 15px;
-  height: 15px;
+  top: 16px;
+  right: 16px;
+
+  width: 32px;
+  height: 32px;
+
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
   border: none;
-  background-color: transparent;
-  cursor: pointer;
+  border-radius: 50%;
+  background: $color-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   fill: $color-black-second;
-  transition: fill $cubic;
+  transition: fill $cubic, box-shadow $cubic;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    top: 12px;
+    right: 12px;;
+  }
 
   &:active {
     fill: $color-green-dark;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
   }
 
   @include media-query(desktop) {
     &:hover,
     &:focus {
       fill: $color-green-dark;
+      box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
     }
   }
 }
@@ -86,29 +97,26 @@
 
 .register__title {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 
   font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  font-size: 24px;
+  line-height: calc(29/ 24);
   text-align: center;
   letter-spacing: 0.03em;
   color: $color-black-second;
-
-  @media screen and (min-width: 480px) {
-      font-size: 18px;
-      line-height: calc(22 / 18);
-  }
 }
 
 .register__group {
-  margin-bottom: 10px;
+  margin-bottom: 32px;
 }
 
 .register__wrap {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+
+  height: 72px;
 
   &:last-child {
     margin-bottom: 0;
@@ -117,30 +125,39 @@
 
 .register__label {
   display: block;
-  font-size: 12px;
-  line-height: calc(14 / 12);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(22 / 16);
   text-align: left;
-  margin-bottom: 4px;
+  // margin-bottom: 4px;
   padding-left: 10px;
 }
 
-.register__input,
-.register__message {
+.register__input {
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   padding-left: 40px;
 
   width: 100%;
-  // height: 42px;
+  height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
   background-color: $color-white;
-  border: 0.854167 solid $color-yellow;
+  border: 1px solid $color-green-dark;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   outline: transparent;
-  font-size: 12px;
-  line-height: calc(18 / 12);
 
-  transition: border $cubic;
+  transition: box-shadow $cubic;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+    }
 }
+
 .register__input {
   &:not(:placeholder-shown):required:valid {
     border-color: $color-green-dark;
@@ -155,29 +172,10 @@
 .register__alert {
   opacity: 0;
 }
-.register__message:hover,
-.register__message:focus {
-  border: 1px solid $color-green-dark;
-}
-
-.register__message {
-  height: 100px;
-  resize: none;
-  padding: 12px 16px;
-
-  transition: border $cubic;
-
-  &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    color: $color-grey;
-  }
-}
 
 .register__icon {
   position: absolute;
-  bottom: 28px;
+  bottom: 18px;
   left: 12px;
 
   transition: fill $color-yellow;
@@ -187,99 +185,35 @@
   fill: $color-green-dark;
 }
 
-.register__agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.register__checkbox {
-  @extend %visually-hidden;
-}
-
-.register__icon--uncheck {
-  .register__checkbox:checked + .register__icon-form & {
-    opacity: 0;
-    transition: opacity $cubic;
-  }
-}
-
-.register__icon--check {
-  opacity: 0;
-  transition: opacity $cubic;
-
-  .register__checkbox:checked + .register__icon-form & {
-    opacity: 1;
-    fill: $color-green-dark;
-  }
-}
-
-.register__agreement-text {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: calc(12 / 10);
-  letter-spacing: 0.03em;
-  color: $color-black-second;
-
-  user-select: none;
-
-  @media screen and (min-width: 480px) {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-  }
-
-  @include media-query(desktop) {
-    font-size: 14px;
-    line-height: calc(16 / 14);
-  }
-}
-
-.register__agreement-link {
-  color: $color-green-dark;
-  text-underline-position: under;
-  font-size: 10px;
-  line-height: calc(12 / 10);
-
-  @include media-query(tablet) {
-    font-size: 14px;
-    line-height: calc(16 / 14);
-  }
-}
-
 .register__btn {
   display: block;
   align-items: center;
 
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(20 / 13);
   text-align: center;
   letter-spacing: 0.06em;
   color: $color-black-second;
 
   margin: 0 auto;
-  width: 200px;
-  height: 40px;
-  padding: 10px 42px;
-  background-color: $color-green;
+  width: 110px;
+  height: 44px;
+  padding: 10px 38px;
+  background-color: $color-white;
   border-radius: 30px;
-  border: transparent;
+  border: 2px solid $color-green-dark;
   cursor: pointer;
 
   transition: background-color $cubic, box-shadow $cubic;
 
 
-  &:active {
-    background-color: $color-green-accent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 
   @include media-query(desktop) {
-    &:hover,
-    &:focus {
+    &:hover {
+      border: 2px solid $color-olive;
       background-color: $cubic;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
     }
   }
 }
