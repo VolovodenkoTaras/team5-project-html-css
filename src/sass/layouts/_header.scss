@@ -7,11 +7,14 @@
   z-index: 100;
   background-color: $color-white-second;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  &--no-transparency {
+  
+  padding: 10px 0;
+
+       &--no-transparency {
     background-color: rgba(255, 229, 80, 0.5);
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  }
+       }
 }
 
 .header_container {
@@ -26,9 +29,10 @@
 .logo {
   @extend %link;
 }
-.header__logo {
-  padding: 10px 0;
-}
+
+// .header__logo {
+//   padding: 10px 0;
+// }
 
 .header__navigation {
   display: flex;

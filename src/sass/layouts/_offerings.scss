@@ -5,12 +5,25 @@
     
 
     @include media-query(tablet) {
-        margin-top: -208px;
+        margin-top: -108px;
     }
 
     @include media-query(desktop) {
-        margin-top: -261px;
+        margin-top: -121px;
     }
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            background-image: url(../images/offerings/offeringsBg-mob.svg);
+
+                         @media screen and (min-width: $tablet) {
+                             background-image: url(../images/offerings/offeringsBg-tabl.svg);
+                         }
+
+                         @media screen and (min-width: $desktop) {
+                            background-image: url(../images/offerings/offeringsBg-desk.svg);
+                         }
 
     &__content {
             padding-top: 41px;
@@ -30,18 +43,7 @@
                 align-items: center;
             }
 
-            background-repeat: no-repeat;
-            background-size: cover;
 
-            background-image: url(../images/offerings/offeringsBg-mob.svg);
-
-                         @media screen and (min-width: $tablet) {
-                             background-image: url(../images/offerings/offeringsBg-tabl.svg);
-                         }
-
-                         @media screen and (min-width: $desktop) {
-                            background-image: url(../images/offerings/offeringsBg-desk.svg);
-                         }
                                 
                             
         
