@@ -1,7 +1,7 @@
 .offerings {
 
-    padding-top: 0;
-    padding-bottom: 0;
+    // padding-top: 0;
+    // padding-bottom: 0;
     
 
     @include media-query(tablet) {
@@ -26,8 +26,8 @@
                          }
 
     &__content {
-            padding-top: 41px;
-            padding-bottom: 60px;
+            // padding-top: 41px;
+            // padding-bottom: 60px;
         
             @include media-query(tablet) {
                 padding-top: 150px;
