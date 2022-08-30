@@ -7,17 +7,17 @@
         background-repeat: no-repeat;
         background-image: url(../images/customers/bg-xs-2.svg);
     
-        @media screen and (min-width: $mobile) {
+        @include media-query(mobile) {
             max-width: 768px;
             background-image: url(../images/customers/bg-xs-2.svg);
         }
     
-        @media screen and (min-width: $tablet) {
+        @include media-query(tablet) {
             max-width: 1200px;
             background-image: url(../images/customers/bg-md-2.svg);
         }
     
-        @media screen and (min-width: $desktop) {
+        @include media-query(desktop) {
             max-width: 1980px;
             background-image: url(../images/customers/bg-lg-2.svg);
         }
@@ -35,7 +35,7 @@
         
         margin-bottom: 32px;
 
-        @media screen and (min-width: $tablet) {
+        @include media-query(tablet) {
                 font-size: 16px;
                 line-height: calc(19 / 16);
             }
@@ -109,7 +109,7 @@
 
     margin-bottom: 42px;
 
-      @media screen and (min-width: $tablet) {
+      @include media-query(tablet) {
         font-size: 18px;
         line-height: calc(21 / 18 );
         font-weight: 700;
@@ -146,7 +146,7 @@
 .person__name {
         margin-bottom: 3px;
 
-            @media screen and (min-width: $tablet){
+            @include media-query(tablet){
                 margin-bottom: 4px;
             }
         }

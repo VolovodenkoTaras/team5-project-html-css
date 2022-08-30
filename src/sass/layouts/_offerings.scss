@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include media-query(tablet) {
       max-width: 100%;
       background-image: url(../images/offerings/bg-md-1.svg);
       background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 
     &__content {
         
-   @media screen and (min-width: $tablet) {
+   @include media-query(tablet) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,7 +62,7 @@
 }
 
   .offerings__img-container {
-  @media screen and (min-width: $tablet) and (max-width: 1279.98px) {
+  @include media-query(tablet-only) {
     display: flex;
     align-items: baseline;
   }

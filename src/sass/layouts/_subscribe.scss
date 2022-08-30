@@ -42,7 +42,7 @@
       background-image: url('../images/subscription/banana-mob-322@2x.png');
     }
   
-    @media screen and (min-width: $tablet) {
+    @include media-query(tablet) {
       margin-bottom: 20px;
       margin-right: 0;
   
@@ -60,7 +60,7 @@
       }
     }
   
-    @media screen and (min-width: $desktop) {
+    @include media-query(desktop) {
       display: block;
       order: 2;
       width: 546px;
@@ -79,11 +79,11 @@
     }
 }
 .subscribe__wrapper {
-  @media screen and (min-width: $tablet) {
+  @include media-query(tablet) {
       width: 656px;
     }
   
-    @media screen and (min-width: $desktop) {
+    @include media-query(desktop) {
       margin-right: 38px;
     }
 }
