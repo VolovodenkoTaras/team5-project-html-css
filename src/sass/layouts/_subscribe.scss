@@ -1,27 +1,19 @@
 //Subscribe styles
 .subscribe {
-  margin-top: -100px;
-  // padding-top: 0;
-  // padding-bottom: 17px;
+  margin-top: -40px;
+  padding-top: 0;
 
   @include media-query(tablet) {
-    margin-top: -172px;
+    margin-top: -72px;
+    padding-bottom: 100px;
   }
 
   @include media-query(desktop) {
-    margin-top: -166px;
+    margin-top: -66px;
+    padding-bottom: 64px;
   }
 }
-// .subscribe-main {
-//   position: relative;
-//  top: -43px;
-//  @include media-query(tablet) {
-// top:-72px;
-// }
-// @include media-query(desktop) {
-//   top: -66px;
-// }
-// }
+
 
 .subscribe__main {
   @include media-query(desktop) {
