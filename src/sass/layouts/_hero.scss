@@ -58,6 +58,16 @@
       line-height: calc(58 / 48);
       margin-bottom: 28px;
     }
+
+    // animation
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: transform 0.8s linear 0s, opacity 0.8s linear 0s;
+    
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
   }
 
   &__text {
@@ -78,6 +88,16 @@
       width: 502px;
       font-size: 16px;
       line-height: calc(24 / 16);
+    }
+
+        // animation
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s;
+
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
     }
   }
 

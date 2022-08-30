@@ -1,4 +1,5 @@
 .offerings {
+    margin: 0 auto;
 
     @include media-query(tablet-less) {
      padding-top: 41px;
