@@ -11,25 +11,26 @@
       <div class="register__group" role="group">
         <label class="register__wrap">
           <span class="register__label">Name</span>
-          <input
-            class="register__input"
-            type="text"
-            name="user-name"
-            placeholder="Your name"
-            minlength="3"
-            maxlength="25"
-            autofocus
-            required
-          />
-          <p class="register__alert">
-            <svg class="subscribe-footer__alert-icon" width="12" height="12">
-              <use href="./images/icon.svg#alert"></use>
-            </svg>
-            <span class="alert__text"
-              >The name must be between 3 and 25 characters</span
-            >
-          </p>
-
+          <div class="register__alert-group">
+            <input
+              class="register__input"
+              type="text"
+              name="user-name"
+              placeholder="Your name"
+              minlength="3"
+              maxlength="25"
+              autofocus
+              required
+            />
+            <p class="register__alert">
+              <svg class="subscribe-footer__alert-icon" width="12" height="12">
+                <use href="./images/icon.svg#alert"></use>
+              </svg>
+              <span class="alert__text"
+                >The name must be between 3 and 25 characters</span
+              >
+            </p>
+          </div>
           <svg class="register__icon" width="18" height="18">
             <use href="./images/icon.svg#user"></use>
           </svg>
@@ -37,26 +38,25 @@
 
         <label class="register__wrap">
           <span class="register__label">Phone number</span>
-
-          <input
-            class="register__input"
-            type="tel"
-            name="user-phone"
-            placeholder="+38(0_ _) _ _ _   _ _   _ _"
-            inputmode="numeric"
-            maxlength="19"
-            minlength="3"
-            required
-          />
-          <p class="register__alert">
-            <svg class="subscribe-footer__alert-icon" width="12" height="12">
-              <use href="./images/icon.svg#alert"></use>
-            </svg>
-            <span class="alert__text">
-              This phone must be in the format 099 000 00 00</span
-            >
-          </p>
-
+          <div class="register__alert-group">
+            <input
+              class="register__input"
+              type="tel"
+              name="user-phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              maxlength="19"
+              minlength="3"
+              required
+            />
+            <p class="register__alert">
+              <svg class="subscribe-footer__alert-icon" width="12" height="12">
+                <use href="./images/icon.svg#alert"></use>
+              </svg>
+              <span class="alert__text">
+                This phone must be in the format 099 000 00 00</span
+              >
+            </p>
+          </div>
           <svg class="register__icon" width="18" height="18">
             <use href="./images/icon.svg#phone"></use>
           </svg>
@@ -64,23 +64,23 @@
 
         <label class="register__wrap">
           <span class="register__label">E-mail</span>
-
-          <input
-            class="register__input"
-            type="email"
-            name="user-email"
-            placeholder="example@gmail.com"
-            required
-          />
-          <p class="register__alert">
-            <svg class="subscribe-footer__alert-icon" width="12" height="12">
-              <use href="./images/icon.svg#alert"></use>
-            </svg>
-            <span class="alert__text"
-              >Not a valid email address (example@email.com)</span
-            >
-          </p>
-
+          <div class="register__alert-group">
+            <input
+              class="register__input"
+              type="email"
+              name="user-email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <p class="register__alert">
+              <svg class="subscribe-footer__alert-icon" width="12" height="12">
+                <use href="./images/icon.svg#alert"></use>
+              </svg>
+              <span class="alert__text"
+                >Not a valid email address (example@email.com)</span
+              >
+            </p>
+          </div>
           <svg class="register__icon" width="18" height="18">
             <use href="./images/icon.svg#envelop"></use>
           </svg>
