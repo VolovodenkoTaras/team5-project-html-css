@@ -142,16 +142,25 @@
     height: 580px;
   }
 }
+
+
 .swiper-slide {
   display: none;
+  
   @include media-query(tablet) {
     display: flex;
+  }
+}
+
+.swiper-border {
+  @include media-query(tablet) {
 
     border: 14px solid $color-yellow;
     border-radius: 50%;
   }
 
   @include media-query(desktop) {
+
     border: 26px solid $color-yellow;
   }
 }
