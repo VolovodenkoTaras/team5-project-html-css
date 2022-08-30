@@ -67,7 +67,7 @@
         display: grid;
         grid-gap: 32px;
         grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 120px;
+        margin-bottom: 60px;
     }
 
     @include media-query(desktop) {
