@@ -2,8 +2,8 @@
 
     max-width: 480px;
         margin: 0 auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        // padding-top: 60px;
+        // padding-bottom: 60px;
         display: block;
         background-position: center;
         background-size: 100% 100%;
@@ -74,7 +74,7 @@
         display: grid;
         grid-gap: 139px;
         grid-template-columns: repeat(2, 501px);
-        margin-bottom: 134px;
+        margin-bottom: 84px;
     }
 
 
@@ -95,6 +95,14 @@
         @include media-query(desktop) {
         padding: 14px;
             }
+        
+
+        @include media-query(tablet-less) {
+                &:first-child {
+               letter-spacing: 0.01em;
+                }
+                }
+         
        }   
  
 }
@@ -102,6 +110,7 @@
 .review__stars {
     fill: $color-yellow;
     margin-bottom: 28px;
+
     @include media-query(desktop){
         padding-top: 14px;
     }  
@@ -111,7 +120,11 @@
     font-size: 16px;
     font-weight: 700;
     line-height: calc(19 / 16);
+
     margin-bottom: 42px;
+
+    
+
 
       @media screen and (min-width: $tablet) {
         font-size: 18px;
@@ -140,9 +153,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
-    // @include media-query(desktop){
-    //     margin-right: 123px;
-    // }
+
 }
 .person__clients {
     margin-top: 10px;
