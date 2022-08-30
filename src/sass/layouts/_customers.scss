@@ -8,7 +8,7 @@
         background-position: center;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-image: url(../images/customers/bg-sm-2.svg);
+        background-image: url(../images/customers/bg-xs-2.svg);
     
         // Media
     
@@ -33,7 +33,7 @@
 
     &__title {
         text-align: left;
-        @include media-query(desktop){
+        @include media-query(desktop) {
             margin-left: 16px;
             margin-bottom: 20px;
         }
@@ -64,13 +64,16 @@
     @extend %list;
 
     @include media-query(tablet) {
-        display: flex;
-        gap: 32px;
+        display: grid;
+        grid-gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 120px;
     }
 
     @include media-query(desktop) {
-        display: flex;
-        gap: 139px;
+        display: grid;
+        grid-gap: 139px;
+        grid-template-columns: repeat(2, 501px);
         margin-bottom: 134px;
     }
 
@@ -84,20 +87,16 @@
         
        border-radius: 0 15px 15px;
     
-       @include media-query(tablet){
+       @include media-query(tablet) {
+        padding: 12px;
         margin-bottom: 0px;
             }
 
-        @include media-query(desktop){
-        margin-left: 16px;
+        @include media-query(desktop) {
+        padding: 14px;
             }
        }   
-
-       &__item:nth-child(2) {
-       @include media-query(desktop){
-        margin-right: 107px;
-            }
-       }   
+ 
 }
 
 .review__stars {
@@ -111,10 +110,10 @@
 .review__text {
     font-size: 16px;
     font-weight: 700;
-    line-height: calc(18 / 16);
+    line-height: calc(19 / 16);
     margin-bottom: 42px;
 
-    @media screen and (min-width: $tablet) {
+      @media screen and (min-width: $tablet) {
         font-size: 18px;
         line-height: calc(21 / 18 );
         font-weight: 700;
@@ -141,9 +140,9 @@
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
-    @include media-query(desktop){
-        margin-right: 123px;
-    }
+    // @include media-query(desktop){
+    //     margin-right: 123px;
+    // }
 }
 .person__clients {
     margin-top: 10px;
