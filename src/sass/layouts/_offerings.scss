@@ -37,7 +37,7 @@
       background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include media-query(desktop) {
     max-width: 1920px;
     background-image: url(../images/offerings/bg-lg-1.svg);
     background-repeat: no-repeat;
@@ -53,8 +53,9 @@
         justify-content: center;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include media-query(desktop) {
         display: flex;
+        gap: 90px;
         flex-direction: row;
     }
 
@@ -72,7 +73,7 @@
 .offerings__img-container--bottom {
   margin-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
+  @include media-query(desktop) {
     margin-bottom: 0;
   }
 }
@@ -92,7 +93,7 @@
 
   &--middle,
   &--small {
-    @media screen and (min-width: $desktop) {
+    @include media-query(desktop) {
       position: absolute;
       width: 1px;
       height: 1px;
@@ -124,18 +125,11 @@
 
 .offerings__wrapper {
 
-    // margin-bottom: 28px;
-
-    // @include media-query(tablet) {
-    //   margin-bottom: 0px;
-    // }
-
     @include media-query(desktop) {
       width: 526px;
     }
-
-    
-         @media screen and (min-width: $desktop) {
+ 
+         @include media-query(desktop) {
             margin-bottom: 0px;
 
             max-width: 573px;
