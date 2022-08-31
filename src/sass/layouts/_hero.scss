@@ -94,7 +94,7 @@
         // animation
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: transform 0.25s linear 0.85s, opacity 0.25s linear 0.85s;
+    transition: transform 0.35s linear 0.85s, opacity 0.35s linear 0.85s;
 
     &._active {
       transform: translate(0px, 0px);
@@ -124,7 +124,7 @@
             // animation
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: transform 0.25s linear 1.05s, opacity 0.25s linear 1.05s;
+    transition: transform 0.35s linear 1.15s, opacity 0.35s linear 1.15s;
 
     &._active {
       transform: translate(0px, 0px);

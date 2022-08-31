@@ -26,14 +26,14 @@ var swiper = new Swiper(".mySwiper", {
     pauseOnMouseEnter: true
 
 
-  }, 
-  speed: 1000,
+  },
+  speed: 2000,
 
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
 
- 
+
 
 });
