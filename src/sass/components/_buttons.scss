@@ -5,8 +5,8 @@
  {
 
     animation-play-state:running;
-    // animation: turning 2s ease-out 0.5s infinite alternate;
-    animation-name: turning;
+    // animation-name: turning;
+    animation-name: skale3D;
     animation-duration: 750ms;
     animation-timing-function: linear;
     animation-delay: 250ms;
@@ -26,16 +26,16 @@
     align-items: center;
 }
 
-.btn--animation:hover,
-.btn--animation:focus {
-    background-color: $color-green-accent;
-    box-shadow: 0 0 5px $color-green-accent,
-        0 0 25px $color-green-accent,
-        0 0 50px $color-green-accent,
-        0 0 100px $color-green-accent;
+// .btn--animation:hover,
+// .btn--animation:focus {
+//     background-color: $color-green-accent;
+//     box-shadow: 0 0 5px $color-green-accent,
+//         0 0 25px $color-green-accent,
+//         0 0 50px $color-green-accent,
+//         0 0 100px $color-green-accent;
 
-    -webkit-box-reflect: below 5px linear-gradient(transparent, $color-white);
-}
+//     -webkit-box-reflect: below 5px linear-gradient(transparent, $color-white);
+// }
 
 .btn__item {
     position: absolute;
