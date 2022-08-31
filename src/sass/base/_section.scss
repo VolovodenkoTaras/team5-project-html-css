@@ -16,6 +16,17 @@
         margin-top: 0;
         margin-bottom: 20px;
 
+    // // animation
+    // transform: translate(0px, 120%);
+    // opacity: 0;
+    // transition: transform 0.8s linear 0s, opacity 0.8s linear 0s;
+    
+    // &._active {
+    //   transform: translate(0px, 0px);
+    //   opacity: 1;
+    // }
+    // // animation
+
         @media screen and (min-width:$tablet) {
                 font-size: 42px;
                 line-height: calc(50 / 42);
