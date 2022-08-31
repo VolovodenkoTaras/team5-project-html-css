@@ -3,4 +3,37 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  grabCursor: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  mousewheel: {
+
+    sensitivity: 1,
+  },
+
+  freeMode: true,
+
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+
+
+  }, 
+  speed: 1000,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+ 
+
 });
