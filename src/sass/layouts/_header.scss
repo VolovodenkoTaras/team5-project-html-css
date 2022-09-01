@@ -21,9 +21,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // @media screen and (min-width: $mobile) {
-  //   width: 100%;
-  // }
+
+  @include media-query(mobile-only) {
+    width: 100%;
+  }
 }
 
 .no-scroll {
