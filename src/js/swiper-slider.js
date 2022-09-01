@@ -20,10 +20,11 @@ var swiper = new Swiper(".mySwiper", {
   freeMode: true,
 
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     stopOnLastSlide: false,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true
+    pauseOnMouseEnter: true,
+    loop: true
 
 
   },
