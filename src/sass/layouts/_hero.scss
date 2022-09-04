@@ -157,17 +157,6 @@
 .slider {
   display: none;
 
-        // animation
-    transform: scale3d(2, 2, 2);
-    opacity: 0;
-    transition: opacity 0.5s linear 0s, transform 0.5s linear 0s;
-
-    &._active {
-    transform: scale3d(1, 1, 1);
-      opacity: 1;
-    }
-         // animation
-
   @include media-query(tablet) {
     position: absolute;
     bottom: -73px;
@@ -175,6 +164,7 @@
     display: flex;
     width: 336px;
     height: 320px;
+    animation: slider 500ms linear;
     
   }
   @include media-query(desktop) {
