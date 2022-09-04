@@ -2,6 +2,10 @@
 
   padding-bottom: 50px;
 
+    //   Закрепленный хэдэр
+      margin-top: 72px;
+    //    Закрепленный хэдэр   
+
   @include media-query(tablet) {
        padding-top: 60px;
        padding-bottom: 73px;
