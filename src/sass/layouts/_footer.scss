@@ -5,40 +5,40 @@
   background-position: 0 132px, bottom, 100% 0;
   background-repeat: no-repeat;
   background-size: 110px 116px, 253px 66px, 104px 259px;
-  background-image: url(../images/footer/bi_f_mob_left@1x_sm.png),
-    url(../images/footer/bi_f_mob_bottom@1x_sm.png),
-    url(../images/footer/bi_f_mob_rigth@1x_sm.png);
+  background-image: url(../images/footer/bi_f_mob_left@1x_sm.webp),
+    url(../images/footer/bi_f_mob_bottom@1x_sm.webp),
+    url(../images/footer/bi_f_mob_rigth@1x_sm.webp);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/footer/bi_f_mob_left@2x_sm.png),
-      url(../images/footer/bi_f_mob_bottom@2x_sm.png),
-      url(../images/footer/bi_f_mob_rigth@2x_sm.png);
+    background-image: url(../images/footer/bi_f_mob_left@2x_sm.webp),
+      url(../images/footer/bi_f_mob_bottom@2x_sm.webp),
+      url(../images/footer/bi_f_mob_rigth@2x_sm.webp);
   }
   @include media-query(tablet) {
     background-position: bottom, 100% 0;
     background-size: 785px 141px, 203px 365px;
-    background-image: url(../images/footer/bi_f_tab_bottom@1x_md.png),
-      url(../images/footer/bi_f_tab_left@1x_md.png);
+    background-image: url(../images/footer/bi_f_tab_bottom@1x_md.webp),
+      url(../images/footer/bi_f_tab_left@1x_md.webp);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/bi_f_tab_bottom@2x_md.png),
-        url(../images/footer/bi_f_tab_left@2x_md.png);
+      background-image: url(../images/footer/bi_f_tab_bottom@2x_md.webp),
+        url(../images/footer/bi_f_tab_left@2x_md.webp);
     }
   }
   @include media-query(desktop) {
     background-size: 100%;
     background-position-y: bottom;
 
-    background-image: url(../images/footer/footerBg-desc-1211@1x.png);
+    background-image: url(../images/footer/footerBg-desc-1211@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/footerBg-desc-2422@2x.png);
+      background-image: url(../images/footer/footerBg-desc-2422@2x.webp);
     }
   }
 }
