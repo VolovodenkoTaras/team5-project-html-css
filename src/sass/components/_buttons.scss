@@ -47,39 +47,56 @@
     top: 0;
     left: -100%;
     width: 100%;
-    height: 5px;
+    height: 3px;
     background: linear-gradient(90deg, transparent, yellow);
     animation: btn-anim1 2s linear infinite;
+
+    @include media-query(tablet) {
+        height: 5px;
+    }
 }
 
 .btn__item:nth-child(2) {
     top: -100%;
     right: 0;
-    width: 5px;
+    width: 3px;
     height: 100%;
     background: linear-gradient(180deg, transparent, yellow);
     animation: btn-anim2 2s linear infinite;
-    animation-delay: 0.5s
+    animation-delay: 0.5s;
+    
+    @include media-query(tablet) {
+            width: 5px;
+        }
+    
 }
 
 .btn__item:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
-    height: 5px;
+    height: 3px;
     background: linear-gradient(270deg, transparent, yellow);
     animation: btn-anim3 2s linear infinite;
-    animation-delay: 1s
+    animation-delay: 1s;
+
+    @include media-query(tablet) {
+            height: 5px;
+        }
 }
 
 .btn__item:nth-child(4) {
     bottom: -100%;
     left: 0;
-    width: 5px;
+    width: 3px;
     height: 100%;
     background: linear-gradient(360deg, transparent, yellow);
     animation: btn-anim4 2s linear infinite;
-    animation-delay: 1.5s
+    animation-delay: 1.5s;
+
+    @include media-query(tablet) {
+            width: 5px;
+        }
 }
 
 
